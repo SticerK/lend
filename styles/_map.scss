@@ -1,0 +1,139 @@
+.map{
+    padding-bottom: 70px;
+    .slider__buttons_map{
+        left: 22px;
+    }
+
+
+    &__wrapper{
+        background-image: url('../img/map/map.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 110% 120%;
+        width: 1321px;
+        height: 563px;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        
+        
+    }
+
+    &__title{
+        color: black;
+        font-size: 38px;
+        font-weight: 800;
+    }
+
+    &__items{
+        margin-top: 35px;
+        display: flex;
+        gap: 32px;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 114px;
+        
+    }
+    .map__buttons{
+        display: flex;
+        gap: 21px;
+        margin-top: 65px;
+    }
+
+}
+
+.item-small{
+    display: flex;
+    color: black;
+
+    &:nth-child(2){
+        border-left: 1px solid rgba(#00000021, 0.13);
+        border-right: 1px solid rgba(#00000021, 0.13);
+        padding: 0 32px;
+    }
+
+    &__content{
+        margin-left: 12px;
+    }
+    &__title{
+        font-size: 18px;
+    }
+    &__text{
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000B2;
+    }
+
+}
+
+@media(max-width:320px){
+    .map{
+       
+        padding-bottom: 30px;
+
+        .slider__buttons_map{
+            top: 35%;
+           left: 10px;
+        }
+    
+    
+        &__wrapper{
+            width: 100%;
+            background-position: 75% 100%;
+            background-size: cover;
+            align-items: flex-start;
+            padding-top: 40px;
+            
+            
+        }
+    
+        &__title{
+            font-size: 28px;
+        }
+    
+        &__items{
+            margin-top: 50px;
+           justify-content: center;
+        }
+    
+        &__content{
+            margin-left: 30px;
+            width: 100%;
+
+            
+        }
+        .map__buttons{
+           flex-direction: column;
+        }
+    
+    }
+    
+    .item-small{
+        display: none;
+    
+        &:nth-child(1){
+            display: flex;
+        }
+    
+        &__image{
+
+            img{
+                width: 60px;
+            }
+        }
+
+        &__title{
+            font-size: 22px;
+        }
+        &__text{
+            font-size: 16px;
+        }
+    
+    }
+}
